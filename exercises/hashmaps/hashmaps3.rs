@@ -35,7 +35,6 @@ fn build_scores_table(results: String) -> HashMap<String, Team> {
 
         let team_1_entry = scores.entry(team_1_name.to_string()).or_insert(
             Team {
-                name: team_1_name,
                 goals_scored: 0,
                 goals_conceded: 0
             }
@@ -45,7 +44,6 @@ fn build_scores_table(results: String) -> HashMap<String, Team> {
 
         let team_2_entry = scores.entry(team_2_name.to_string()).or_insert(
             Team {
-                name: team_2_name,
                 goals_scored: 0,
                 goals_conceded: 0
             }
